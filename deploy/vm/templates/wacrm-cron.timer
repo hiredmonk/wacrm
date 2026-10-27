@@ -1,0 +1,10 @@
+[Unit]
+Description=Run the wacrm cron every minute
+
+[Timer]
+OnCalendar=*-*-* *:*:00
+AccuracySec=5s
+Unit=wacrm-cron.service
+
+[Install]
+WantedBy=timers.target
